@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = "_Layout";
+}
+
+<h2>Entrada al portal</h2>
+
+<section class="contenedor">
+    <h3>Control cuentas</h3>
+
+    <p>Usuario conectado: @User.Claims.FirstOrDefault(x => x.Type == "Nombre Completo").Value</p>
+    <p>Correo: @User.Claims.FirstOrDefault(x => x.Type == "Correo electronico").Value</p>
+
+
+    @Html.ValidationSummary()
+    <a href="~/Home/CambiarContraseña">
+        <input type="button" value="CambiarContraseña" />
+    </a>
+    <a href="~/Home/CerrarSesion">
+        <input type="button" value="Cerrar sesion" />
+    </a>
+    <a href="javascript:eliminar()">
+        <input type="button" onclick="eliminar()" value="Dar de baja mi cuenta" />
+    </a>
+
+
+</section>
+
+<form method="post" action="~/Home/Eliminar">
+    <input type="email" hidden name="correo" value="@User.Claims.FirstOrDefault(x => x.Type == "Correo electronico").Value" id="correoEliminar" />
+</form>
+
+<script>
+
+    function eliminar() {
+        if (confirm('Seguro que quieres eliminar tu cuenta?')) {
+            document.querySelector("form").submit();
+        }
+    }
+</script>
+
+

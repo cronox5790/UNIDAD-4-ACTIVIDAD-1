@@ -1,0 +1,19 @@
+﻿@model ControlCuentasActividad1.Models.Usuario
+@{
+    Layout = "_Layout";
+}
+
+<h2>ActivarCuenta</h2>
+
+<section class="formulario">
+    <p>
+        Ingresa el codigo que fue enviado a tu dirección de correo electronico registrada para activar tu cuenta.       
+    </p>
+    <form method="post" action="~/Home/ActivarCuenta">
+        <label>Código:</label>
+        <input type="number" required name="codigo" style="display:block; width:80%;"/><br />
+
+        <input type="submit" value="Activa cuenta" />
+    </form>
+</section>
+

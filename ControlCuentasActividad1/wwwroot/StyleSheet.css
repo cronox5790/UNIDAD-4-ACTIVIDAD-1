@@ -1,0 +1,171 @@
+﻿@font-face {
+    font-family: anime;
+    src:url(tommy.otf);
+}
+html, body {
+    background-color: #B71C1C;
+    height: 100%;
+    width: 100%;
+    font-family: anime;
+}
+
+
+header {
+    width: 90%;
+    padding:10px;
+    margin:auto;
+}
+
+    header h1 {
+        margin: auto;
+        color: #F0F3F4;
+        text-align: center;
+    }
+
+main h2 {
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    color: #F0F3F4;
+    padding: 5px;
+}
+
+
+
+
+.formulario, .contenedor {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    
+}
+    .contenedor a {
+        display: block;
+        width: 80%;
+        background-color: #89043D;
+        color: #F0F3F4;
+        font-weight: bold;
+        margin: 10px auto;
+    }
+        .contenedor a input[type=button] {
+            width: 100%;
+            background: #943126;
+            color: white;
+            font-weight: bold;
+            padding: 20px;
+            font-family: anime;
+        }
+
+    .formulario form label {
+        display: block;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .formulario form input[type=email], .formulario form input[type=password], .formulario form input[type=number] {
+        display: block;
+        margin: auto;
+        width: 80%;
+        padding: 5px;
+    }
+
+    .formulario .RecordarDatos {
+        float: left;
+        display: block;
+        margin-left: 10%;
+    }
+
+    .formulario #etiquetaRecordar {
+        text-align: left;
+        display: inline;
+    }
+
+    .formulario #terminos, .formulario #olvide {
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+        text-align: left;
+    }
+
+    .formulario form input[type=submit], .formulario #CrearCuenta {
+        display: block;
+        background-color: #424242;
+        width: 80%;
+        padding: 5px;
+        margin: auto;
+        color: white;
+        font-size: medium;
+    }
+
+    .formulario .crear, .formulario #sesion {
+        text-align: center;
+    }
+
+#cuenta {
+    padding: 20px;
+    width: 60%;
+}
+
+.formulario h4 {
+    margin: 0;
+}
+
+.formulario fieldset {
+    margin: 20px;
+    padding: 10px;
+}
+
+    .formulario fieldset legend, .Invitado fieldset legend {
+        font-weight: bolder;
+        color: #35012C;
+    }
+
+    .formulario fieldset label, i {
+        display: block;
+        float: left;
+        width: 35%;
+        margin-left: 10%;
+        font-weight: 500;
+    }
+
+    .formulario fieldset input, .formulario fieldset select {
+        display: block;
+        margin-bottom: 5px;
+        width: 50%;
+    }
+
+    .formulario fieldset i {
+        width: initial;
+        color: darkred;
+    }
+
+.formulario #CrearCuenta {
+    width: 95%;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario .InfoPago {
+    display: block;
+    width: 90%;
+    float: none;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+    footer{      
+        margin: auto;
+        width:100%;
+        
+    }
+        footer > p {
+            font-size: small;
+            font-weight: bold;
+            color: #F0F3F4;
+            text-align: center;
+            padding: 5px;
+        }
